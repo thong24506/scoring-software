@@ -1,0 +1,24 @@
+.content {
+    margin-top: var(--height-header);
+    padding: 40px;
+    color: var(--black);
+}
+
+.content__table {
+    width: 100%;
+    font-size: 1.2rem;
+    border: 1px solid var(--black);
+    
+    th {
+        border: 1px solid var(--black);
+        background-color: var(--content-color);
+    }
+    .content__table-title {
+        background-color: var(--primary-color);
+    }
+    .content__table-delete:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+

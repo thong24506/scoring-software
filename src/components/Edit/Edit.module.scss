@@ -1,0 +1,100 @@
+.edit {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #52525276;
+    color: var(--black);
+}
+
+.edit__board {
+    width: 70vw;
+    height: 70vh;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 1px var(--text-color);
+}
+
+.edit__board-close-icon {
+    float: right;
+    clear: both;
+    margin: 6px 12px 6px 6px;
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+.edit__board-input {
+    margin-top: 36px;
+    padding: 0 12px; 
+}
+
+.edit__board-input-NOS {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    input {
+        border-radius: 4px;
+        padding: 3px;
+        margin-left: 40px;
+        width: 40px;
+    }
+    .edit__board-input-NOS-btn {
+        font-size: 1.4rem;
+        margin-left: 40px;
+        padding: 3px 12px;
+        border-radius: 4px;
+        color: var(--white);
+        background-color: var(--black);
+        cursor: pointer;                                                                                            
+    }
+}
+.edit__board-input-sub {
+    margin-top: 32px;
+    
+}
+
+.edit__board-btn-save {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 14px;
+    button {
+        padding: 8px 16px;
+        border-radius: 4px;
+        background-color: var(--black);
+        color: var(--white);
+        cursor: pointer;
+    }
+}
+
+.edit-table {
+    width: 100%;
+    font-size: 1.2rem;
+    border: 1px solid var(--black);
+    thead {
+        th {
+            border: 1px solid var(--black);
+        }
+    }
+    tbody {
+        tr {
+            th {
+                width: calc(100% / 7);
+                border: 1px solid var(--black);
+                
+                input {
+                    width: 100%;
+                    padding: 0 3px;
+                }
+            }
+            th:first-child {
+                width: 4px;
+            }
+        }
+    }
+}
